@@ -4,6 +4,247 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Colocar um Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar-Início -->
+    <header>
+      <!-- Colocar uma imagem para logo -->
+      <img src="" alt="" />
+      <div class="container">
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap" />
+            </svg>
+            <span class="fs-4">Simple header</span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Início</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Cardápio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Reservas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+          </ul>
+
+          <!-- image profile -->
+          <div class="flex-shrink-0 dropdown">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </header>
+      </div>
+    </header>
+    <!-- Navbar-Fim -->
+
+    <!-- Carousel-Início -->
+    <section class="py-5 text-center container">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/slide1-burger.jpg"
+              class="d-block w-100"
+              alt="burger"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/slide2-pizza.jpg"
+              class="d-block w-100"
+              alt="pizza"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/slide3-hotdog.jpg"
+              class="d-block w-100"
+              alt="hotdog"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 class="display-5">Faça Sua Escolha</h1>
+    </section>
+    <!-- Carousel-Fim -->
+
+    <!-- Cards-Início -->
+    <div class="album py-5 bg-body-tertiary ">
+      <div class="container ">
+        <!-- All-Cards -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <!-- Card-1 -->
+          <div class="col">
+            <div class="card shadow-sm card-hover">
+              <img src="assets/bife.jpg" alt="bife" class="bd-placeholder-img card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  Bife com Batata
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      +
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      -
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card-2 -->
+          <div class="col">
+            <div class="card shadow-sm card-hover">
+              <img src="assets/coxa.jpg" alt="coxa de frango" class="bd-placeholder-img card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  Coxa de Frango Crocante
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      +
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      -
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3 -->
+          <div class="col">
+            <div class="card shadow-sm card-hover">
+              <img src="assets/panela.jpg" alt="Carne de Panela" class="bd-placeholder-img card-img-top">
+              <div class="card-body">
+                <p class="card-text">
+                  Carne de Panela
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      +
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      -
+                    </button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cards-Fim -->
+
+    <!-- Footer-Início -->
+    <div class="container">
+      <footer class="py-3 my-4 border-top">
+        <ul class="nav col-lx-4 justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Contato</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- Footer-Fim -->
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
