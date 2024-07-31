@@ -21,7 +21,7 @@
       <!-- Colocar uma imagem para logo -->
       <img src="" alt="" />
       <div class="container">
-        <header
+        <div
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
         >
           <a
@@ -67,7 +67,7 @@
               <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
           </div>
-        </header>
+        </div>
       </div>
     </header>
     <!-- Navbar-Fim -->
@@ -103,12 +103,12 @@
           </div>
         </div>
       </div>
-      <h1 class="display-5">Faça Sua Escolha</h1>
+      <h1 class="display-5 mt-3">Faça Sua Escolha</h1>
     </section>
     <!-- Carousel-Fim -->
 
-    <!-- Cards-Início -->
-    <div class="album py-4 bg-body-tertiary">
+    <!-- Cards_Prato_Principal-Início -->
+    <div class="album py-4 bg-body-tertiary shadow-lg">
       <div class="container">
         <div class="text-center mb-4">
           <h2 class="fs-3">Prato Principal</h2>
@@ -120,90 +120,108 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
           <!-- Card-1 -->
           <div class="col">
-            <div class="card shadow-sm card-hover">
+            <div class="card rounded-3 shadow-sm card-hover">
               <img
                 src="assets/bife.jpg"
-                alt="bife"
-                class="bd-placeholder-img card-img-top"
+                alt="Bife com batata"
+                class="bd-placeholder-img card-img-top p-2 rounded-4"
               />
-              <div class="card-body">
-                <p class="card-text">Bife com Batata</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      -
-                    </button>
+              <div class="card-body jus text-center pt-0">
+                <h4 class="card-text fs-6 mb-0">Bife com Batata</h4>
+                <h5 class="card-text fs-5 text-success fw-bold">R$ 30,00</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center quantity btn-added"
+                >
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus" />
+                    <input
+                      type="number"
+                      step="1"
+                      min="0"
+                      max=""
+                      id="1"
+                      name="quantity"
+                      value="0"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    />
+                    <input type="button" value="+" class="plus" />
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
                 </div>
               </div>
             </div>
           </div>
           <!-- Card-2 -->
           <div class="col">
-            <div class="card shadow-sm card-hover">
+            <div class="card rounded-3 shadow-sm card-hover">
               <img
                 src="assets/coxa.jpg"
-                alt="coxa de frango"
-                class="bd-placeholder-img card-img-top"
+                alt="Coxa de Frango Crocante"
+                class="bd-placeholder-img card-img-top p-2 rounded-4"
               />
-              <div class="card-body">
-                <p class="card-text">Coxa de Frango Crocante</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      -
-                    </button>
+              <div class="card-body jus text-center pt-0">
+                <h4 class="card-text fs-6 mb-0">Coxa de Frango Crocante</h4>
+                <h5 class="card-text fs-5 text-success fw-bold">R$ 25,00</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center quantity btn-added"
+                >
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus" />
+                    <input
+                      type="number"
+                      step="1"
+                      min="0"
+                      max=""
+                      id="2"
+                      name="quantity"
+                      value="0"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    />
+                    <input type="button" value="+" class="plus" />
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
                 </div>
               </div>
             </div>
           </div>
           <!-- Card-3 -->
           <div class="col">
-            <div class="card shadow-sm card-hover">
+            <div class="card rounded-3 shadow-sm card-hover">
               <img
                 src="assets/panela.jpg"
                 alt="Carne de Panela"
-                class="bd-placeholder-img card-img-top"
+                class="bd-placeholder-img card-img-top p-2 rounded-4"
               />
-              <div class="card-body">
-                <p class="card-text">Carne de Panela</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      -
-                    </button>
+              <div class="card-body jus text-center pt-0">
+                <h4 class="card-text fs-6 mb-0">Carne de Panela</h4>
+                <h5 class="card-text fs-5 text-success fw-bold">R$ 22,00</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center quantity btn-added"
+                >
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus" />
+                    <input
+                      type="number"
+                      step="1"
+                      min="0"
+                      max=""
+                      id="3"
+                      name="quantity"
+                      value="0"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    />
+                    <input type="button" value="+" class="plus" />
                   </div>
-                  <small class="text-body-secondary">9 mins</small>
                 </div>
               </div>
             </div>
@@ -211,7 +229,131 @@
         </div>
       </div>
     </div>
-    <!-- Cards-Fim -->
+    <!-- Cards_Prato_Principal-Fim -->
+    <br>
+    <!-- Cards_Acompanhamentos-Início -->
+    <div class="album py-4 bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fs-3">Acompanhamentos</h2>
+          <h3 class="fs-6">
+            Porções para uma pessoa.
+          </h3>
+        </div>
+        <!-- All-Cards -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+          <!-- Card-1 -->
+          <div class="col">
+            <div class="card rounded-3 shadow-sm card-hover">
+              <img
+                src="assets/farofa.jpg"
+                alt="Farofa"
+                class="bd-placeholder-img card-img-top p-2 rounded-4"
+              />
+              <div class="card-body jus text-center pt-0">
+                <h4 class="card-text fs-6 mb-0">Farofa</h4>
+                <h5 class="card-text fs-5 text-success fw-bold">R$ 10,00</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center quantity btn-added"
+                >
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus" />
+                    <input
+                      type="number"
+                      step="1"
+                      min="0"
+                      max=""
+                      id="4"
+                      name="quantity"
+                      value="0"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    />
+                    <input type="button" value="+" class="plus" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card-2 -->
+          <div class="col">
+            <div class="card rounded-3 shadow-sm card-hover">
+              <img
+                src="assets/salad.jpg"
+                alt="Salada"
+                class="bd-placeholder-img card-img-top p-2 rounded-4"
+              />
+              <div class="card-body jus text-center pt-0">
+                <h4 class="card-text fs-6 mb-0">Salada</h4>
+                <h5 class="card-text fs-5 text-success fw-bold">R$ 8,00</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center quantity btn-added"
+                >
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus" />
+                    <input
+                      type="number"
+                      step="1"
+                      min="0"
+                      max=""
+                      id="5"
+                      name="quantity"
+                      value="0"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    />
+                    <input type="button" value="+" class="plus" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3 -->
+          <div class="col">
+            <div class="card rounded-3 shadow-sm card-hover">
+              <img
+                src="assets/torresmo.jpg"
+                alt="Torresmo"
+                class="bd-placeholder-img card-img-top p-2 rounded-4"
+              />
+              <div class="card-body jus text-center pt-0">
+                <h4 class="card-text fs-6 mb-0">Torresmo</h4>
+                <h5 class="card-text fs-5 text-success fw-bold">R$ 12,00</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center quantity btn-added"
+                >
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus" />
+                    <input
+                      type="number"
+                      step="1"
+                      min="0"
+                      max=""
+                      id="6"
+                      name="quantity"
+                      value="0"
+                      title="Qty"
+                      class="input-text qty text"
+                      size="4"
+                      pattern=""
+                      inputmode=""
+                    />
+                    <input type="button" value="+" class="plus" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cards_Acompanhamentos-Fim -->
 
     <!-- Footer-Início -->
     <div class="container">
