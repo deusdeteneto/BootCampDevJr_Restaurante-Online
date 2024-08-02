@@ -6,7 +6,7 @@
     <title>Cardápio</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Colocar um Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -19,7 +19,7 @@
     <!-- Navbar-Início -->
     <header>
       <!-- Colocar uma imagem para logo -->
-      <img src="" alt="" />
+
       <div class="container">
         <div
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
@@ -28,19 +28,22 @@
             href="/"
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap" />
-            </svg>
-            <span class="fs-4">Simple header</span>
+            <img src="assets/logo.png" alt="logo" style="width: 100px" />
           </a>
 
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a href="#" class="nav-link active" aria-current="page">Início</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Cardápio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Reservas</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            <li class="nav-item">
+              <a href="Cardápio.html" class="nav-link">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a href="Reservas.html" class="nav-link">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contato.html" class="nav-link">Contato</a>
+            </li>
           </ul>
 
           <!-- image profile -->
@@ -52,19 +55,18 @@
               aria-expanded="false"
             >
               <img
-                src="https://github.com/mdo.png"
+                src="https://avatars.githubusercontent.com/u/100215460?v=4"
                 alt="mdo"
                 width="32"
                 height="32"
-                class="rounded-circle"
+                class="rounded-circle mx-1"
               />
             </a>
             <ul class="dropdown-menu text-small shadow">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
               <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
             </ul>
           </div>
         </div>
@@ -230,15 +232,13 @@
       </div>
     </div>
     <!-- Cards_Prato_Principal-Fim -->
-    <br>
+    <br />
     <!-- Cards_Acompanhamentos-Início -->
     <div class="album py-4 bg-body-tertiary">
       <div class="container">
         <div class="text-center mb-4">
           <h2 class="fs-3">Acompanhamentos</h2>
-          <h3 class="fs-6">
-            Porções para uma pessoa.
-          </h3>
+          <h3 class="fs-6">Porções para uma pessoa.</h3>
         </div>
         <!-- All-Cards -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
