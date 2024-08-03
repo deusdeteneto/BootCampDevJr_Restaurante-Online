@@ -234,7 +234,7 @@
     <!-- Cards_Prato_Principal-Fim -->
     <br />
     <!-- Cards_Acompanhamentos-Início -->
-    <div class="album py-4 bg-body-tertiary">
+    <div class="album py-4 bg-body-tertiary shadow-lg">
       <div class="container">
         <div class="text-center mb-4">
           <h2 class="fs-3">Acompanhamentos</h2>
@@ -355,6 +355,40 @@
     </div>
     <!-- Cards_Acompanhamentos-Fim -->
 
+    <!-- Formulário-Início -->
+    <div class="album py-4 my-4 bg-body-tertiary shadow-lg">
+      <div class="container">
+        <h2 class="fs-3">Dados Pessoais</h2>
+        <input
+          type="text"
+          class="form-control my-4"
+          id="inName"
+          placeholder="seu Nome"
+        />
+        <input
+          type="phone"
+          class="form-control my-4"
+          id="inPhone"
+          placeholder="(00) 0 0000-0000"
+        />
+        <input
+          type="email"
+          class="form-control my-4"
+          id="inMail"
+          placeholder="name@example.com"
+        />
+      </div>
+    </div>
+    <!-- Formulário-Fim -->
+
+    <!-- Botão-Início -->
+    <div class="container d-flex justify-content-center">
+      <button type="button" class="btn btn-primary btn-lg" style="width: 80%">
+        Large button
+      </button>
+    </div>
+    <!-- Botão-Início -->
+
     <!-- Footer-Início -->
     <div class="container">
       <footer class="py-3 my-4 border-top">
@@ -376,11 +410,16 @@
     </div>
     <!-- Footer-Fim -->
 
-    <script src="script.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#inPhone").mask("(00) 0 0000-0000");
+    </script>
   </body>
 </html>
