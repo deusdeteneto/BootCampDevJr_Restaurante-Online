@@ -27,7 +27,7 @@ function Calcular() {
   respNome.innerHTML = `Caro(a) <strong>${nomeCliente}</strong>,`;
 
   //Texto do pedido
-  dadosPedido.innerHTML = `Seguem os dados do seu pedido.</br>Você escolheu:</br></br>`;
+  dadosPedido.innerHTML = `Seguem os dados do seu pedido.</br>Você escolheu:</br>`;
 
   //Calcular Quantidade
   quantidade.forEach((form) => {
