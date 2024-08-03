@@ -12,11 +12,11 @@ var prods = [
 function Calcular() {
   const quantidade = document.querySelectorAll(".buttons_added");
   const nomeCliente = document.querySelector("#inName").value;
-  var respNome = document.querySelector(".resp1");
-  var dadosPedido = document.querySelector(".resp2");
-  var respPedido = document.querySelector(".resp3");
-  var precoFinal = document.querySelector(".resp4");
-  var total = 0;
+  const respNome = document.querySelector(".resp1");
+  const dadosPedido = document.querySelector(".resp2");
+  const respPedido = document.querySelector(".resp3");
+  const precoFinal = document.querySelector(".resp4");
+  let total = 0;
 
   // Limpar os conteúdos anteriores
   respNome.innerHTML = "";
@@ -36,13 +36,20 @@ function Calcular() {
     let prato = prods.find((p) => p.id == id);
 
     if (prato && qtd > 0) {
-      respPedido.innerHTML += `<li>Prato: R$ ${
-        qtd.nome
-      }: ${qtd}x ${prato.preco.toFixed(2)}, Total: ${(total +=
-        prato.preco * qtd).toFixed(2)}</li></br>`;
-      total += prato.preco * qtd;
+      let subtotal = prato.preco * qtd;
+      respPedido.innerHTML += `<li>${qtd}x ${
+        prato.nome
+      } de R$${prato.preco.toFixed(2)}. <strong>Total: ${subtotal.toFixed(
+        2
+      )}</strong></li></br>`;
+      total += subtotal;
     }
   });
+
+  // Exibir o valor total final após o loop
+  respPedido.innerHTML += `<p><strong>Valor Total: R$${total.toFixed(
+    2
+  )}</strong></p>`;
 
   // Mostrar o Valor Total do Pedido
   var formatter = new Intl.NumberFormat("pt-BR", {
