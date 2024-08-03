@@ -17,11 +17,9 @@ Bem-vindo ao repositório do projeto "Restaurante Online". Este projeto é uma a
 
 O projeto "Restaurante Online" é uma aplicação web que facilita a visualização do cardápio, a realização de reservas e a obtenção de informações de contato para um restaurante. O objetivo é fornecer uma experiência de usuário agradável e intuitiva, tanto para clientes quanto para administradores do restaurante.
 
-## Imagem do Projeto
+## Imagens do Projeto
 
-![Imagem do Projeto](caminho/para/sua/imagem.png)
-
-> *Substitua `caminho/para/sua/imagem.png` pelo caminho real da imagem no seu repositório.*
+![Confira o Projeto](https://github.com/deusdeteneto/bootcamp-devjr-modulo4-projeto-menu/blob/main/image/ProjetoMenu.gif)
 
 ## Funcionalidades
 
