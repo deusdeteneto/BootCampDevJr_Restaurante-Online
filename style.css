@@ -4,8 +4,12 @@
   text-align: center;
 }
 .card-hover:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s;
+  transform: scale(1.02);
+  transition: transform 0.4s;
+}
+
+.container-custom{
+  max-width: 1000px!important;
 }
 
 /* -- Botões Quantidade -- */

@@ -72,11 +72,29 @@
 
     <!-- Carousel-Início -->
     <section class="text-center">
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -109,13 +127,31 @@
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
     <!-- Carousel-Fim -->
 
     <!-- Cards_Prato_Principal-Início -->
     <div class="album py-4 bg-body-tertiary shadow-lg">
-      <div class="container">
+      <div class="container container-custom">
         <div class="text-center mb-4">
           <h2 class="fs-3">Prato Principal</h2>
           <h3 class="fs-6">
@@ -123,7 +159,9 @@
           </h3>
         </div>
         <!-- All-Cards -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+        <div
+          class="row row-cols-1 row-cols-sm-1 mx-sm-5 row-cols-md-3 mx-md-4 row-cols-lg-3 mx-lg-3 g-5"
+        >
           <!-- Card-1 -->
           <div class="col">
             <div class="card rounded-3 shadow-sm card-hover">
@@ -263,13 +301,15 @@
     <br />
     <!-- Cards_Acompanhamentos-Início -->
     <div class="album py-4 bg-body-tertiary shadow-lg">
-      <div class="container">
+      <div class="container container-custom">
         <div class="text-center mb-4">
           <h2 class="fs-3">Acompanhamentos</h2>
           <h3 class="fs-6">Porções para uma pessoa.</h3>
         </div>
         <!-- All-Cards -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+        <div
+          class="row row-cols-1 row-cols-sm-1 mx-sm-5 row-cols-md-3 mx-md-4 row-cols-lg-3 mx-lg-3 g-5"
+        >
           <!-- Card-4 -->
           <div class="col">
             <div class="card rounded-3 shadow-sm card-hover">
@@ -409,25 +449,28 @@
 
     <!-- Formulário-Início -->
     <div class="album py-4 my-4 bg-body-tertiary shadow-lg">
-      <div class="container">
+      <div class="container container-custom">
         <h2 class="fs-3">Dados Pessoais</h2>
         <input
           type="text"
           class="form-control my-4"
           id="inName"
           placeholder="Digite Seu Nome"
+          required
         />
         <input
           type="phone"
           class="form-control my-4"
           id="inPhone"
           placeholder="(00) 0 0000-0000"
+          required
         />
         <input
           type="email"
           class="form-control my-4"
           id="inMail"
           placeholder="nome@exemplo.com"
+          required
         />
       </div>
     </div>
